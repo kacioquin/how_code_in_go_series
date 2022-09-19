@@ -1,0 +1,1 @@
+## This is a project for my studies in go following "[How code in go](https://www.digitalocean.com/community/books/how-to-code-in-go-ebook)"
