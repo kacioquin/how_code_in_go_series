@@ -23,4 +23,21 @@ func main() {
 	fmt.Println("This string contains the word \"likes\"? ->", strings.Contains(s, "likes"))
 	fmt.Println("How many times the letter \"s\" appears in the sentece? ->", strings.Count(s, "s"))
 	fmt.Println("The size of the this sentence is ->", len(s))
+
+	//Join
+	fmt.Println("Using Join ->", strings.Join([]string{"sharks", "crustaceans", "plankton"}, ", "))
+
+	//Split
+	text := "Sammy has a balloon."
+	x := strings.Split(text, " ")
+	fmt.Printf("Using Split -> %q\n", x)
+
+	//Fields - ignore whitespaces
+	data := "username password     email date"
+	fields := strings.Fields(data)
+	fmt.Printf("Using Fields -> %q\n", fields)
+
+	//ReplaceAll
+	fmt.Println("Replace \"has\" to \"had\" using \"ReplaceAll\"->", strings.ReplaceAll(text, "has", "had"))
+
 }
