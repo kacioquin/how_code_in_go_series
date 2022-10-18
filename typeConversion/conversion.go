@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 )
 
@@ -37,4 +38,30 @@ func main() {
 	f := 5524.53
 	fmt.Println(fmt.Sprint(f))
 	fmt.Println("Sammy has " + fmt.Sprint(f) + " points.")
+
+	// strings to integer
+	lines_yesterday := "50"
+	lines_today := "108"
+
+	yesterday, err := strconv.Atoi(lines_yesterday)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	today, err := strconv.Atoi(lines_today)
+	if err != nil {
+		log.Fatal(err)
+	}
+	lines_more := today - yesterday
+
+	fmt.Println("lines more", lines_more)
+
+	//strings and bytes
+	stringA := "my string"
+	sliceB := []byte(stringA)
+	stringC := string(sliceB)
+
+	fmt.Println("String A -> ", stringA)
+	fmt.Println("Slice B -> ", sliceB)
+	fmt.Println("String C -> ", stringC)
 }
