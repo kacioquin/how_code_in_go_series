@@ -10,4 +10,9 @@ func main() {
 	fmt.Println("map ->", sammy)
 	fmt.Println("Sammy name ->", sammy["name"])
 	fmt.Println("Sammy animal ->", sammy["animal"])
+
+	//iteraction
+	for key, value := range sammy {
+		fmt.Printf("%q is the key for value %q\n", key, value)
+	}
 }
